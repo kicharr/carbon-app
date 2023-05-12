@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+
+  <meta name="description"
+        content="Прогноз погоды в реальном времени - Карбон-Поволжье. Карбоновые полигоны, участники, карта территариального расположения полигонов. Подробная инфмация по номеру телефона: +7 (842) 233 74 01"/>
+
+  <link rel="shortcut icon" href="./assets/assets-renovation/favicon.svg" sizes="64x64" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/forecast.css">
+
+  <title>Прогноз погоды | Карбон-Поволжье</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="logo-wrapper">
+      <figure>
+        <a href="./MainPage.html">
+          <img src="./assets/assets-renovation/main_new__logo%201.svg" alt="Logo">
+        </a>
+
+      </figure>
+    </div>
+    <div class="header-text__wrapper">
+      <nav class="nav">
+        <ul class="header-list__links">
+          <li>
+            <a class="header-nav__link" href="./MainPage.html">Главная</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./AboutPage.html">О проекте</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./NewsPage.html">Новости</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./SitePage.html">Участки</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="#" style="text-decoration: #636F19 underline;">Прогноз
+              погоды</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="container">
+
+  <main class="main">
+    <h2 class="block-title">Погода в выбраных регионах</h2>
+    <div class="weather-card__wrapper">
+
+      <div class="weather-card">
+        <div class="weather-city-name-text">
+          Город:<br>
+          <span id="first-city-name" class="city-name result">0</span>
+        </div>
+        <div class="weather-temp-text">
+          Температура: <br>
+          <span id="first-temp" class="temp result">0</span>
+          <span class="symbol">&deg</span>
+        </div>
+
+        <div class="weather-pressure">
+          Давление: <br>
+          <span id="first-pressure" class="pressure result">0</span>
+          <span class="symbol">мм рт. ст.</span>
+        </div>
+        <div class="weather-pressure">
+          Влажность: <br>
+          <span id="first-humidity" class="second-pressure result">0</span>
+          <span class="symbol">%</span>
+        </div>
+      </div>
+
+      <div class="weather-card">
+        <div class="weather-city-name-text">
+          Город:<br>
+          <span id="second-city" class="second-city-name result">0</span>
+        </div>
+        <div class="weather-temp-text">
+          Температура: <br>
+          <span id="second-temp" class="second-temp result">0</span>
+          <span class="symbol">&deg</span>
+        </div>
+
+        <div class="weather-pressure">
+          Давление: <br>
+          <span id="second-pressure" class="second-pressure result">0</span>
+          <span class="symbol">мм рт. ст.</span>
+        </div>
+        <div class="weather-pressure">
+          Влажность: <br>
+          <span id="second-humidity" class="second-pressure result">0</span>
+          <span class="symbol">%</span>
+        </div>
+      </div>
+
+
+      <div class="weather-region-text__wrapper">
+        <p class="weather-text">
+          Карбоновые полигоны играют важную роль в местных экосистемах, но их влияние может распространяться далеко за пределы их территории. Например, многие исследователи связывают карбоновые полигоны с изменениями атмосферных условий.
+        </p>
+
+        <p class="weather-text">
+          Когда мерзлота тает на карбоновых полигонах, она выделяет в атмосферу большое количество углекислого газа, который является одним из основных газов, способствующих глобальному потеплению. Поэтому изменения в карбоновых полигонах могут влиять на состав атмосферы и способствовать изменению климата в целом.
+
+        </p>
+
+        <p class="weather-text">
+          Кроме того, карбоновые полигоны могут также влиять на давление и температуру в местных регионах. Например, изменения в карбоновых полигонах могут приводить к появлению талых вод, которые могут повышать уровень воды в реках и озерах. Это, в свою очередь, может влиять на атмосферное давление и температуру в окружающих регионах.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+    <p class="weather-text">
+      Таким образом, карбоновые полигоны являются важными компонентами природных экосистем и могут оказывать влияние на многие аспекты окружающей среды, включая состав атмосферы, давление и температуру. Поэтому изучение карбоновых полигонов и их влияния на окружающую среду является важной задачей для современной науки.
+    </p>
+
+    <div class="graphics-block__wrapper">
+      <div class="graphics__wrapper">
+        <div class="separate-graphics-title__wrapper">
+          <h4 class="separate-graphics__title block-title">Сравнение температур на участках</h4>
+        </div>
+        <div class="separate-graphic__wrapper">
+          <canvas id="temp" class="separate-graphics"></canvas>
+          <div class="separate-graphics__description-wrapper first-description-wrapper">
+            <p class="separate-graphics__description">
+              Изменения в карбоновых полигонах могут приводить к повышению температуры в местных регионах. При таянии мерзлоты на карбоновых полигонах выделяется большое количество тепла, что может приводить к повышению температуры в окружающих регионах.
+            </p>
+            <p class="separate-graphics__description">
+              С другой стороны, карбоновые полигоны могут также охлаждать окружающую среду. На графике можно увидеть, что на участках с большим количеством карбоновых полигонов температура воздуха ниже, чем на участках, где таких полигонов меньше.
+            </p>
+            <p class="separate-graphics__description">
+              При этом, влияние карбоновых полигонов на температуру может быть сезонным. Например, весной и летом на карбоновых полигонах может образовываться талая вода, которая может приводить к повышению температуры в окружающих регионах.
+            </p>
+            <a class="all-sites__link forecast-btn" href="./SitePage.html">Все полигоны &#8594</a>
+          </div>
+          </div>
+
+        <div class="separate-graphics-title__wrapper">
+          <h4 class="separate-graphics__title block-title">Сравнение влажности на участках</h4>
+        </div>
+        <div class="separate-graphic__wrapper">
+          <canvas id="humidity" class="separate-graphics"></canvas>
+          <div class="separate-graphics__description-wrapper">
+            <p class="separate-graphics__description">
+              Одним из основных способов, которыми карбоновые полигоны влияют на атмосферное давление, является изменение уровня грунтовых вод. Когда на карбоновых полигонах начинает таять мерзлота, это может привести к образованию маленьких озер и ручьев, которые в свою очередь могут повысить уровень грунтовых вод и, как следствие, изменить атмосферное давление.
+            </p>
+            <a class="all-sites__link forecast-btn" href="./SitePage.html">Все полигоны &#8594</a>
+          </div>
+
+        </div>
+        <div class="separate-graphics-title__wrapper">
+          <h4 class="separate-graphics__title block-title">Сравнение атмосферного давления на участках</h4>
+        </div>
+        <div class="separate-graphic__wrapper">
+          <canvas id="pressure" class="separate-graphics"></canvas>
+          <div class="separate-graphics__description-wrapper first-description-wrapper">
+            <p class="separate-graphics__description">
+              Когда мерзлота на карбоновых полигонах тает, это может приводить к образованию талых вод, которые увеличивают объем водных ресурсов и могут влиять на атмосферное давление в регионе.
+            </p>
+            <p class="separate-graphics__description">
+              Увеличение количества талых вод на карбоновых полигонах может привести к увеличению давления, так как большой объем воды может оказывать дополнительное давление на окружающую среду.
+            </p>
+            <a class="all-sites__link forecast-btn" href="./SitePage.html">Все полигоны &#8594</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer-logo">
+      <a href="#" style="display: flex; align-items: center">
+        <img src="./assets/assets-renovation/new-logo-white.svg" class="footer-logo__img" alt="Carbon Logotype">
+      </a>
+    </div>
+
+    <div class="footer-nav">
+      <nav class="nav">
+        <h4>Разделы</h4>
+        <ul class="header-list__links footer-list">
+          <li>
+            <a class="header-nav__link" href="./MainPage.html">Главная</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./AboutPage.html">О проекте</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./NewsPage.html">Новости</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="./SitePage.html">Участки</a>
+          </li>
+          <li>
+            <a class="header-nav__link" href="#" style="text-decoration: #FFFFFF underline;">Прогноз
+              погоды</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-info">
+      <div class="footer-text">
+        <h4>Оператор полигона</h4>
+        <p>
+          Данис Карлович <br> Нургалиев
+        </p>
+      </div>
+      <div class="footer-text">
+        <a class="footer-info__link" href="https://kpfu.ru">https://kpfu.ru</a>
+        <a class="footer-info__link" href="tel:+78422337401">+7 842 233 74 01</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.umd.js"
+        integrity="sha512-vCUbejtS+HcWYtDHRF2T5B0BKwVG/CLeuew5uT2AiX4SJ2Wff52+kfgONvtdATqkqQMC9Ye5K+Td0OTaz+P7cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="./js/weather.js"></script>
+</body>
+</html>
